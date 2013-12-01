@@ -1,5 +1,14 @@
-.articles{
-	img{
-		max-width: 800px;
+.article{
+	.block{
+		margin-top: 50px;
+	}
+	h4{
+		font-weight: bold;
+		border-bottom: solid 1px $gray-border;
+		margin-bottom: 20px;
+	}
+	h5{
+		font-weight: bold;
+		font-size: 16px;
 	}
 }
