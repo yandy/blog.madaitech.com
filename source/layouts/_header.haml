@@ -1,0 +1,25 @@
+.container
+  .row
+    .col-md-10
+      %ul.list-inline
+        %li
+          = image_tag "logo.png"
+        %li
+          %strong= "麻袋科技"
+        %li
+          %p
+            %i.fa-sun-o.fa.fa-spin
+            = "圆中国人的健康之梦"
+  / - if user_signed_in?
+  /   .col-md-2
+  /     .btn-group
+  /       %button.btn-primary.btn.dropdown-toggle{:'data-toggle' => 'dropdown', :type => 'button'}
+  /         = 'User'
+  /         %span.caret
+  /       %ul.dropdown-menu{:role => 'menu'}
+  /         %li
+  /           = link_to destroy_user_session_path,:method => :delete do
+  /             = '登出'
+  /         %li
+  /           = link_to '#' do
+  /             = '博客'

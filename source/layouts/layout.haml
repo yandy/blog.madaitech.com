@@ -30,22 +30,24 @@
   = javascript_include_tag "modernizr"
   = yield_content :head
 %body
-  / Logo &amp; Top Nav
-  %nav.top-bar
+  / header
+  .header
+    = partial 'layouts/header'
 
   / Main page container
-  .row
-    .small-12.columns
+  .content
+    .container
       = yield
   / Footer
   %footer.footer.row
-    .small-12.large-6.columns
-      %p
-        \&copy; Copyright #{Date.today.year.to_s} 麻袋官方博客
-    .small-12.large-6.columns
-      %p.right
-        %i.icon-heart
-        = link_to '托管于又拍云', 'https://www.upyun.com/?md=geakit'
+    = partial 'layouts/footer'
+    / .small-12.large-6.columns
+    /   %p
+    /     \&copy; Copyright #{Date.today.year.to_s} 麻袋官方博客
+    / .small-12.large-6.columns
+    /   %p.right
+    /     %i.icon-heart
+    /     = link_to '托管于又拍云', 'https://www.upyun.com/?md=geakit'
   /[if lt IE 9]
     #ie-warning-overlay
       #ie-warning
@@ -81,7 +83,6 @@
   :javascript
     $(document).ready(function () {
       #{yield_content :onready}
-      $(document).foundation();
     });
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

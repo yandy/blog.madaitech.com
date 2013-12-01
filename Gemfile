@@ -12,3 +12,6 @@ gem "forgery"
 gem "sitemap_generator"
 gem "tzinfo"
 gem "nokogiri"
+
+# use bootstrap
+gem 'bootstrap-sass', '~> 3.0.2.1'

@@ -1,7 +1,6 @@
 require 'kramdown'
 require 'extensions/sitemap.rb'
-require 'zurb-foundation'
-
+require 'bootstrap-sass'
 activate :sprockets
 
 # Unfortunately ZURB puts its assets in unconventional paths, so we need to
