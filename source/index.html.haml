@@ -7,7 +7,7 @@ pageable: true
 - content_for :title do
   = "麻袋官方博客"
 
-.articles.small-12.large-9.columns.left
+.articles.col-md-9
   - page_articles.each_with_index do |article, i|
     - if i > 0
       %hr/
@@ -20,7 +20,7 @@ pageable: true
       :page_number => page_number          |
     }                                      |
 
-%aside.aside.small-12.large-3.columns.right
+%aside.aside.col-md-3
   %h3 标签
   %ul.tags
     - blog.tags.each do |tag, articles|
@@ -43,6 +43,3 @@ pageable: true
       = link_to 'https://github.com/madaitech' do
         %i.icon-github
         = "麻袋"
-    %li
-      = link_to 'http://weixin.qq.com/' do
-        = image_tag('qrcode_wx.jpg')

@@ -5,19 +5,13 @@
       %address
         %strong= "南京麻袋信息科技有限公司"
         %br
-        = "南京市鼓楼区进香河路时代华府1117室"
-        %br
         %abbr{title: "电话"}
-          %i.fa.fa-phone
-        025-85421161
-      %address
-        %strong= "赵聪"
-        %span.label.label-default= "总经理"
-        %br
-        %abbr{title: "电话"}
-          %i.fa.fa-phone
-        18351950759
-    .col-md-4
+          %i.fa.fa-envelope
+        support@madaitech.com
       %h4= "关注我们"
       .social-tools
-        %wb:follow-button{uid:"2991975565", type:"red_2", width:"136", height:"24"}
+        %iframe{:src => "http://widget.renren.com/plugin/followbutton?page_id=601773376&color=0&model=0", :style => "width:150px;height:40px;", :scrolling => "no", :frameborder => "0", :allowTransparency => "true"}
+        %wb:follow-button{:uid => "3610394007", :type => "red_2", :width => "136", :height => "24"}
+    .col-md-4
+      = image_tag 'qr.png'
+      %p= "扫描关注微信：麻袋科技"

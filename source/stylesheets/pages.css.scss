@@ -4,10 +4,52 @@
     color: #2ba6cb;
     margin-bottom: 10px;
   }
+  .tags{
+    padding-left: 0;
+    li a{
+      color: white;
+    }
+  }
 }
 .aside{
   .divider{
     margin-top: 150px;
     border-top: solid 2px #dde5e9;
+  }
+}
+.header {
+  border-bottom: solid 2px $gray-border;
+  margin-top: 10px;
+  .container .btn-primary a {
+    color: white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  ul.list-inline {
+    li:nth-child(2) {
+      font-size: 1.5em;
+      letter-spacing: 0.2em;
+      vertical-align: middle;
+    }
+  }
+  button {
+    width: 100%;
+  }
+}
+.content{
+}
+.footer {
+  padding: 20px;
+  background-color: $gray-bg;
+  .col-md-4{
+    text-align: center;
+    img{
+      width: 200px;
+    }
+    p{
+      font-size: 16px;
+      font-weight: bold;
+    }
   }
 }
